@@ -14,3 +14,6 @@
 - **$ {selectedText}** -活动文件中的当前选定文本
 - **$ {execPath}** -正在运行的VS Code可执行文件的路径
 - **$ {defaultBuildTask}** -默认构建任务的名称
+
+### END
+
