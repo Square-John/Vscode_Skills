@@ -1,4 +1,6 @@
-# vs code使用技巧笔记
+# vscode 使用笔记
+
+
 
 ## win 10 vs code 搭建C语言编译运行环境
 
@@ -14,7 +16,7 @@
 
 3. 安装汉化插件(为了方便咱们交流,毕竟我英语不好)
 
-   ![image-20200521075430428](assets/image-20200521075430428.png)
+   ![image-20200521075430428](https://cdn.jsdelivr.net/gh/Square-John/Image/img/image-20200521075430428.png)
 
    - 如上图,点击圈起来的图标,这其实就是插件商店入口,当然也有快捷键,这可以自行百度
    - 搜索chinese, 安装上图所指的Chinese(Simplified)插件
@@ -22,7 +24,7 @@
 
 4. 安装C/C++插件
 
-   ![image-20200521075736410](assets/image-20200521075736410.png)
+   ![image-20200521075736410](https://cdn.jsdelivr.net/gh/Square-John/Image/img/image-20200521075736410.png)
 
    - 和安装汉化插件差不多
    - 看上图步骤1, 2, 3
@@ -31,7 +33,7 @@
 
 6. 新建一个`.c`结尾的文件
 
-   ![image-20200521080401653](assets/image-20200521080401653.png)
+   ![image-20200521080401653](https://cdn.jsdelivr.net/gh/Square-John/Image/img/image-20200521080401653.png)
 
    - 如上图,先点1处
    - 再点击2处
@@ -41,7 +43,7 @@
 
 7. `终端` -> `配置默认生成任务` -> 选择下面这个就可以了
 
-   ![image-20200521080658980](assets/image-20200521080658980.png)
+   ![image-20200521080658980](https://cdn.jsdelivr.net/gh/Square-John/Image/img/image-20200521080658980.png)
 
    ​	这一步之后,文件夹里面多了一个`.vscode`文件夹,里面多了一个`tasks.json`文件, 保持默认就行了,如果非要研究清楚`tasks.json`文件的含义,可以百度,可以看官方文档。
 
@@ -55,11 +57,11 @@
 
 10. `运行` -> `添加配置`, 选择下面的选项
 
-    ![image-20200521081528508](assets/image-20200521081528508.png)
+    ![image-20200521081528508](https://cdn.jsdelivr.net/gh/Square-John/Image/img/image-20200521081528508.png)
 
 11. 然后选择下面这一选项
 
-    ![image-20200521081626377](assets/image-20200521081626377.png)
+    ![image-20200521081626377](https://cdn.jsdelivr.net/gh/Square-John/Image/img/image-20200521081626377.png)
 
 12. 经过上面几步, `.vscode`文件夹又多了一个`launch.json`文件, 保持不变就行了。还是那句话,要研究其中的含义,就使用搜索引擎或者看官方文档
 
@@ -81,7 +83,7 @@
 
 4. `ctrl+alt+n` 或者直接点击下面这个图标运行
 
-   ![image-20200521083925526](assets/image-20200521083925526.png)
+   ![image-20200521083925526](https://cdn.jsdelivr.net/gh/Square-John/Image/img/image-20200521083925526.png)
 
 5. `ctrl+alt+m`停止程序运行
 
@@ -125,13 +127,13 @@
 
 3. 经过上面的配置，我们就可以通过这样的方式执行指令：`终端` -> `运行任务` -> 选择需要执行的指令就可以了，如下图
 
-   ![image-20200521090135789](assets/image-20200521090135789.png)
+   ![image-20200521090135789](https://cdn.jsdelivr.net/gh/Square-John/Image/img/image-20200521090135789.png)
 
 4. 但是这样似乎太麻烦了，我就想着给这两个指令设置两个快捷键吧，设置快捷键的方式：
 
    - `ctrl+shift+p` -> ` 输入：keyboard` -> `选择如下图所示的选项`
 
-     ![image-20200521090419902](assets/image-20200521090419902.png)
+     ![image-20200521090419902](https://cdn.jsdelivr.net/gh/Square-John/Image/img/image-20200521090419902.png)
 
    - 在打开的文件`keybindings.json`中输入以下内容并保存：
 
@@ -159,7 +161,7 @@
 
      上面的`"command": "workbench.action.tasks.runTask"`实际上就是定位到了如图所示的位置
 
-     ![image-20200521091108968](assets/image-20200521091108968.png)
+     ![image-20200521091108968](https://cdn.jsdelivr.net/gh/Square-John/Image/img/image-20200521091108968.png)
 
      `"args": "cRun"`就是定位到了我们自定义的脚本，然后为其设置快捷键，`cRun`就是上面定义的`label`标签的值
 
@@ -169,19 +171,19 @@
 
    - `设置` -> `键盘快捷方式` 
 
-     ![image-20200521091849744](assets/image-20200521091849744.png)
+     ![image-20200521091849744](https://cdn.jsdelivr.net/gh/Square-John/Image/img/image-20200521091849744.png)
 
    - 在下面的输入框中输入欲设置的快捷键，如果没有搜索结果就说明该快捷方式未被使用
 
-     ![image-20200521091805971](assets/image-20200521091805971.png)
+     ![image-20200521091805971](https://cdn.jsdelivr.net/gh/Square-John/Image/img/image-20200521091805971.png)
 
 7. 方法教程结束
 
 ### END
 
-## vscode常用的文件变量
 
-### 常用的变量引用
+
+## vscode常用的文件变量
 
 - **$ {workspaceFolder}** -在VS Code中打开的文件夹的路径
 - **$ {workspaceFolderBasename}** -在VS Code中打开的文件夹名称，不带任何斜杠（/）
@@ -199,4 +201,6 @@
 - **$ {defaultBuildTask}** -默认构建任务的名称
 
 ### END
+
+
 
